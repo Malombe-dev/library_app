@@ -1,24 +1,90 @@
-# README
+# LibraryApp: A Book Lending Library Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple book lending library application built with **Ruby on Rails 8**. The application allows registered users to browse available books, borrow books, return books, and view a list of books they currently have borrowed.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## Features
+- **User Registration and Authentication**: Implemented using Rails 8's default authentication system.
+- **Book Management**:
+  - Book listing page with availability status.
+  - Book details page with the ability to borrow if available.
+- **Borrowing System**:
+  - Users can borrow books, creating a borrowing record.
+  - Each borrowing record includes a due date (2 weeks from borrowing date).
+- **User Profile**:
+  - Displays all currently borrowed books.
+  - Ability to return borrowed books.
+- **Model Validations**:
+  - Title, author, and ISBN presence.
+  - Unique ISBN for each book.
+- **Error Handling**:
+  - Prevent borrowing of an already borrowed book.
+- **Tests**:
+  - Written using the default Rails testing framework for models, controllers, and views.
+- **Structured Views**: Clean and well-organized user interface.
 
-* System dependencies
+---
 
-* Configuration
+## Setup Instructions
 
-* Database creation
+### Prerequisites
+- Ruby 3.2.2 or higher
+- Rails 8.0.1 or higher
+- PostgreSQL or SQLite installed
 
-* Database initialization
+### Steps to Setup
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd library_app
+   ```
+2. **Install dependencies**:
+   ```bash
+   bundle install
+   ```
+3. **Setup the database**:
+   ```bash
+   rails db:create
+   rails db:migrate
+   ```
+4. **Start the server**:
+   ```bash
+   rails server
+   ```
+5. **Visit the application**:
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-* How to run the test suite
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running Tests
 
-* Deployment instructions
+To run the test suite, execute:
+```bash
+rails test
+```
 
-* ...
+---
+
+## Deployment
+
+For deployment, ensure all environment variables are correctly set and use tools like Heroku for easy deployment.
+
+---
+
+## GitHub Repository
+
+Repository URL: [GitHub Repository Link Here]
+
+Please visit the repository for more details, commits, and code structure.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Happy Coding!** 🎉
+
