@@ -1,0 +1,18 @@
+
+
+<div class="container mt-4">
+  <div class="card p-4">
+    <h1 class="mb-3"><%= @book.title %></h1>
+    <p><strong>Author:</strong> <%= @book.author %></p>
+    <p><strong>ISBN:</strong> <%= @book.isbn %></p>
+    <p><strong>Status:</strong> <%= @borrowed ? 'Not Available' : 'Available' %></p>
+
+    <% if !@borrowed %>
+      <%= button_to 'Borrow this Book', borrowings_path(book_id: @book.id), method: :post, class: 'btn btn-primary mt-3' %>
+    <% else %>
+      <p class="text-danger mt-3">This book is currently borrowed.</p>
+    <% end %>
+
+    <%= link_to 'Back to All Books', books_path, class: 'btn btn-secondary mt-3' %>
+  </div>
+</div>

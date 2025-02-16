@@ -1,0 +1,15 @@
+<h1>Books You've Borrowed</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Due Date</th>
+    <th>Actions</th>
+  </tr>
+  <% @borrowings.each do |borrow| %>
+    <tr>
+      <td><%= borrow.book.title %></td>
+      <td><%= borrow.due_date.strftime('%d %b %Y') %></td>
+      <td><%= link_to 'Return', return_book_path(borrow.book), method: :post, class: 'btn btn-warning' %></td>
+    </tr>
+  <% end %>
+</table>

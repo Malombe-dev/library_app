@@ -1,0 +1,84 @@
+@use 'bootstrap/scss/bootstrap';
+@use 'bootstrap-icons/font/bootstrap-icons';
+
+.table {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table thead {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-details {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-details h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .book-details p {
+    font-size: 18px; 
+    margin: 10px 0;
+  }
+  
+  .book-details strong {
+    color: #555;
+  }
+  
+  .book-details .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .book-details .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .book-details .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-details .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .book-details .back-link:hover {
+    text-decoration: underline;
+  }
+  
