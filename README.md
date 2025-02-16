@@ -36,7 +36,7 @@ This is a simple book lending library application built with **Ruby on Rails 8**
 ### Steps to Setup
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Malombe-dev/library_app/tree/main
    cd library_app
    ```
 2. **Install dependencies**:
@@ -74,7 +74,7 @@ For deployment, ensure all environment variables are correctly set and use tools
 
 ## GitHub Repository
 
-Repository URL: [GitHub Repository Link Here]
+Repository URL: [GitHub Repository](https://github.com/Malombe-dev/library_app/tree/main)
 
 Please visit the repository for more details, commits, and code structure.
 
